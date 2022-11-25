@@ -1,0 +1,12 @@
+code/cloudsecurity_accessKeys.csv
+cloud_security.md
+rest_api_scanner.md
+code/ec2_ssrf/assets/admin-user.txt
+code/ec2_ssrf/assets/cloudgoat*
+code/ec2_ssrf/terraform/.terraform.lock.hcl
+code/ec2_ssrf/terraform/*.out
+code/ec2_ssrf/terraform/terraform.tfstate*
+code/ec2_ssrf/terraform/.terraform/*
+
+
+
