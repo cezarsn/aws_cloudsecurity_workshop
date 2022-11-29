@@ -80,7 +80,7 @@ resource "aws_iam_policy" "cg-shepard-policy" {
     "Version": "2012-10-17",
     "Statement": [
         {
-            "Sid": "shepard",
+            "Sid": "shepardLambda",
             "Effect": "Allow",
             "Action": [
                 "lambda:Get*",
@@ -88,6 +88,15 @@ resource "aws_iam_policy" "cg-shepard-policy" {
                 "lambda:List*"
             ],
             "Resource": "*"
+        },
+        {
+            "Sid": "shepardS3",
+            "Effect": "Allow",
+            "Action": [
+                "s3:*"
+            ],
+            "Resource": "arn:aws:s3:::${aws_s3_bucket.cg-secret-s3-bucket.bucket}/"
+
         }
     ]
 }
